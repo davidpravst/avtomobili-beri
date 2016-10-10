@@ -1,0 +1,4 @@
+znamka; model; barva
+BMW; M3; rdeca
+Audi; S2; zelena
+Volkswagen; Golf; crna
