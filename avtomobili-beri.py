@@ -14,14 +14,8 @@ class Avto():
     def nastavi_barvo(self, barva):
         self.barva = barva
 
-    def izpisi_znamko(self):
-        print self.znamka
-
-    def izpisi_model(self):
-        print self.model
-
-    def izpisi_barvo(self):
-        print self.barva
+    def izpisi_vse(self):
+        print self.znamka + "; " + self.model + "; " + self.barva
 
 avto = Avto()
 podpicje_count = 0
@@ -52,6 +46,4 @@ with open("avtomobili.txt", "r") as avtomobili_file:
         avto = Avto() #tole resetira spremenljivko, da pravilno doda objekt v seznam, drugače je štala
 
 for x in avtomobili_list:
-    x.izpisi_znamko()
-    x.izpisi_model()
-    x.izpisi_barvo()
+    x.izpisi_vse()
